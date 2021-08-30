@@ -1,0 +1,508 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    text-size-adjust: 100%;
+}
+
+body{
+    width: 100%;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #ffffff;
+    color: #000000;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+i{
+    cursor: pointer;
+}
+
+#container{
+    display: block;
+    width: 90%;
+    margin: auto;
+    max-width: 1600px;
+    overflow: hidden;
+}
+
+button{
+    background: white;
+}
+
+.ham-btn{
+    display: none;
+}
+
+/*nav-bar*/
+#nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+}
+
+#nav-bar li{
+    list-style: none;
+    margin-top: 5px;
+}
+
+#nav-bar li:hover{
+    text-decoration: 3px solid underline;
+    transition: ease-in;
+}
+
+#nav-bar li:active{
+    padding: 2px;
+}
+
+#nav-bar img{
+    margin-top: 0;
+    margin-right: 10px;
+}
+
+#nav-bar #prof{
+    font-size: 21px;
+}
+
+/*nav-left*/
+.left-bar{
+    display: flex;
+}
+
+.left-bar ul{
+    display: flex;
+}
+
+.left-bar li{
+    margin-inline: 12px;
+}
+
+/*nav-right*/
+.right ul{
+    display: flex;
+}
+
+.right li{
+    margin-inline: 15px;
+}
+
+.right i{
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+/*modal*/
+#all-microsoft{
+    position: absolute;
+    width: 70%;
+    background: rgb(214, 234, 241);
+    padding: 40px;
+    margin-left: 290px;
+    z-index: 1;
+    display: none;
+}
+
+.all-microsoft-content i{
+    display: none;
+    float: right;
+}
+
+.all-microsoft-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 1.9;
+}
+
+.all-microsoft-content h4{
+    font-weight: 600;
+}
+
+.all-microsoft-content li{
+    list-style: none;
+}
+
+.all-microsoft-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    width: 100%;
+}
+
+.all-microsoft-content a:hover{
+    text-decoration: underline;
+    transition: ease-in;
+}
+
+#all-microsoft.show{
+    display: flex;
+}
+
+/*showcase*/
+.carousel-item:nth-child(1){
+    background: url('./img/on-sale.png') no-repeat bottom / cover;
+}
+
+.carousel-item:nth-child(2){
+    background: url('./img/laptop.jfif') no-repeat center / cover;
+}
+
+.carousel-item{
+    display: none;
+    padding: 300px;
+}
+
+.carousel-item.active{
+    display: block;
+}
+
+.slide-content{
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: absolute;
+    width: 50%;
+}
+
+.slide-content a{
+    color: #000;
+    text-decoration: none;
+}
+
+.slide-content a:hover{
+    margin-inline: 15px;
+    text-decoration: underline;
+    margin-left: 5px;
+    transition: ease-in;
+}
+/*products1*/
+#products1{
+    display: flex;
+    margin-top: 40px;
+    padding: 10px;
+    margin-bottom: 40px;
+    justify-content: center;
+}
+
+#products1 img{
+    display: grid;
+    padding: 5px;
+}
+
+#products1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#products1 a:hover{
+    text-decoration: underline;
+}
+
+.microsoft365{
+    margin-right: 25px;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.microsoft365 img{
+    margin-left: 50px;
+}
+
+.surface-dev{
+    margin-right: 25px;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.surface-dev img{
+    margin-left: 45px;
+}
+
+.xbox{
+    margin-right: 25px;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.xbox img{
+    margin-left:45px;
+}
+
+.windows{
+    margin-right: 25px;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+}
+
+.windows img{
+    margin-left: 45px;
+}
+
+/*products2*/
+#products2{
+    display: flex;
+    width: 100%;
+    margin-bottom: 70px;
+}
+
+#products2 .context{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#products2 h3{
+    color: #595959;
+}
+
+#products2 a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#products2 a:hover{
+    text-decoration: 3px underline blueviolet;
+    margin-right: 10px;
+    transition: 300ms ease-in;
+}
+
+#products2 i{
+    margin-inline: 5px;
+}
+
+.office365{
+    margin-left: 60px;
+}
+
+.micro-teams{
+    margin-left: 60px;
+}
+
+.surface7{
+    margin-left: 60px;
+}
+
+#showcase2{
+    background: url('./img/game-pass.png')no-repeat top / cover;
+    padding: 200px;
+    margin-bottom: 40px;
+}
+
+#showcase2 .showcase2-content{
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    top: 150px;
+    transform: translateX(-100px);
+    transition: 1000ms;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#showcase2 h1{
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+#showcase2 p{
+    color: white;
+    width: 40%;
+}
+
+#showcase2 button{
+    padding: 10px;
+    width: 12%;
+    font-size: 15px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+#showcase2 a{
+    text-decoration: none;
+    margin-inline: 7px;
+    color: black;
+}
+
+#showcase2 a:hover{
+    margin-inline: 17px;
+    text-decoration: underline;
+    margin-left: 5px;
+    transition: ease-in;
+}
+
+#products3{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+#products3 .context{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#products3 h3{
+    color: #595959;
+}
+
+#products3 a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#products3 a:hover{
+    text-decoration: 3px underline blueviolet;
+    margin-right: 10px;
+    transition:300ms ease-in;
+}
+
+#products3 i{
+    margin-inline: 5px;
+}
+
+.office365-business{
+    margin-left: 60px;
+}
+
+.windows10-enterprise{
+    margin-left: 60px;
+}
+
+.microsoft-viva{
+    margin-left: 60px;
+}
+
+#covid-message{
+    text-align: center;
+    background: rgb(214, 234, 241);
+    padding: 17px;
+    line-height: 1.9;
+    margin-bottom: 50px;
+}
+
+#covid-message h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#covid-message a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+#covid-message a:hover{
+    text-decoration: 3px underline ;
+    margin-inline: 10px;
+    transition: ease-in;
+}
+
+#covid-message i{
+    margin-inline: 10px;
+}
+
+#socials{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#socials h3{
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+#socials a{
+    margin-right: 10px;
+}
+
+#socials img:hover{
+    filter: brightness(70%);
+    transition: ease-in;
+}
+
+#links{
+    width: 100%;
+    background: rgb(214, 234, 241);
+    padding: 40px;
+}
+
+.links-content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-right: 50px;
+    margin-left: 80px;
+    line-height: 1.9;
+}
+
+.links-content h4{
+    font-weight: 600;
+}
+
+.links-content li{
+    list-style: none;
+}
+
+.links-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.links-content a:hover{
+    text-decoration: underline;
+    transition: ease-in;
+}
+
+#footer{
+    width: 100%;
+    background: rgb(214, 234, 241);
+    padding: 10px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-right: 50px;
+    margin-left: 80px;
+    line-height: 1.9;
+}
+
+.footer-content li{
+    list-style: none;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    transition: ease-in;
+}
+
+#footer i {
+    font-size: 20px;
+}
